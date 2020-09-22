@@ -19,10 +19,8 @@ class Serializer:
 
             if readNodes == True:
                 node = line.split()
-                print(node)
                 self.nodes.append(Node(Point(int(node[0]), int(node[1]))))
 
             if readNodes == False:
                 node = line.split()
-                print(node)
                 self.connections.append(Connection(self.nodes[int(node[0])], self.nodes[int(node[1])]))
